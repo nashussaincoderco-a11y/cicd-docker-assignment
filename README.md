@@ -54,7 +54,13 @@ cicd-docker-assignment/
 ```
 
 
+## How it works & implementation details:
 
+
+#### Task 1: Continuos Integration
+
+* File location: ```.github/workflows/ci.yml```
+* What it does: Whenever code changes are pushed
 
 
 
