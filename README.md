@@ -57,10 +57,26 @@ cicd-docker-assignment/
 ## How it works & implementation details:
 
 
-#### Task 1: Continuos Integration
+### Task 1: Continuos Integration(CI)
 
 * File location: ```.github/workflows/ci.yml```
-* What it does: Whenever code changes are pushed
+* What it does: Whenever code changes are pushed, GitHub sets up Python, installs dependencies and runs unit tests using ```pytest``` to catch bugs early.
+
+
+
+
+### Task 2: Continuous Development(CD) 
+* File location: ```.github/workflows/deploy.yml```
+* Docker Hub Registry: nashussaincoderco/python-app
+* What it does: Automatically logs into Docker Hub using secure secrets, builds the Docker image from your Docker file, and pushes the latest version live. 
+
+
+
+### Screenshots of Pipeline Passing for Task 1: 
+
+
+
+
 
 
 
