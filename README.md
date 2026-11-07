@@ -13,4 +13,49 @@ Whenever code is pushed top the main branch, automated workflows run to:
 -  **Automated Testing**: Runs Pytest suites across commits via GitHub Actions
 -  **Containerization** : Packs the Python application into a lightweight Docker Image
 -  **Continuous Deployment**: Automatically builds and pushes updated images to Docker Hub.
--  **Secure Secret Management**:
+-  **Secure Secret Management**: Utilises GitHub Repository secrets for Docker API Authentication.
+
+## 📁 Repository Structure
+
+```text
+cicd-docker-assignment/
+├── .github/
+│   └── workflows/
+│       ├── ci.yml          # Task 1: Continuous Integration Pipeline (Automated testing)
+│       └── deploy.yml      # Task 2: Continuous Deployment Pipeline (Automated deployment)
+├── task-1/
+│   ├── app/
+│   │   └── main.py         # Python Application code & logic
+│   ├── tests/
+│   │   └── test_main.py    # Unit tests
+│   ├── Dockerfile          # Container build instructions
+├── task-2/
+```
+
+
+<img width="509" height="330" alt="image" src="https://github.com/user-attachments/assets/b88f89fb-4c9a-40e8-8e15-235158e350a2" />
+
+
+
+## Pipeline Architecture 
+
+
+```[ Push Code ] ──> [ GitHub Repository ]
+                        │
+       ┌────────────────┴────────────────┐
+       ▼                                 ▼
+[ CI Workflow ]                   [ CD Workflow ]
+ ├── Checkout Code                 ├── Checkout Code
+ ├── Setup Python                  ├── Docker Login (Secrets)
+ ├── Install Dependencies          ├── Build Docker Image
+ └── Run Unit Tests (pytest)       └── Push Image to Docker Hub
+                                         │
+                                         ▼
+                             [ Docker Hub Registry ]
+```
+
+
+
+
+
+
