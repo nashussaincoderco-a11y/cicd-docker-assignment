@@ -38,9 +38,8 @@ cicd-docker-assignment/
 
 
 ## Pipeline Architecture 
-
-
-```[ Push Code ] ──> [ GitHub Repository ]
+```
+[ Push Code ] ──> [ GitHub Repository ]
                         │
        ┌────────────────┴────────────────┐
        ▼                                 ▼
