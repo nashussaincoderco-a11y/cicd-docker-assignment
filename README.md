@@ -74,6 +74,15 @@ cicd-docker-assignment/
 
 ### Screenshots of Pipeline Passing for Task 1: 
 
+<img width="940" height="295" alt="image" src="https://github.com/user-attachments/assets/fbab7a67-cd1e-4be2-8d32-62d6fc6085a8" />
+
+
+
+<img width="940" height="417" alt="image" src="https://github.com/user-attachments/assets/af47aec1-dda6-4489-a953-ed832411e9ed" />
+
+
+
+
 
 
 
