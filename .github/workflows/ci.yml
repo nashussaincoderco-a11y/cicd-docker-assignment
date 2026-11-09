@@ -24,13 +24,13 @@ jobs:
           cd task-1
           python -m unittest discover -s tests 
 
-      - name: Build Docker Image
-        run: |
-          cd task-1
-          docker build -t python-app:latest . 
-
       - name: Run Code Linting
         run: |
           cd task-1
           pip install flake8
           flake8 app/
+
+      - name: Build Docker Image
+        run: |
+          cd task-1
+          docker build -t python-app:latest . 
