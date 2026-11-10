@@ -54,6 +54,10 @@ cicd-docker-assignment/
 ```
 
 
+Each directory represents a focused pipeline with its own code and documentation. 
+
+All GitHub Actions workflows live in ```.github/workflows``` as this is the repository root required for GitHub actions. 
+
 ## How it works & implementation details:
 
 
@@ -74,14 +78,23 @@ cicd-docker-assignment/
 
 ### Screenshots of Pipeline Passing for Task 1: 
 
+
+#### The Workflow Run Dashboard
+
+
 <img width="940" height="295" alt="image" src="https://github.com/user-attachments/assets/fbab7a67-cd1e-4be2-8d32-62d6fc6085a8" />
 
+
+As you can see on the screenshot above, it displays the successful execution of the continuous integration workflow on GitHub actions following a code push to the main branch. It confirms the pipeline's status, matching commit details and total runtime duration with a passing green check mark indicator.  
+
+
+#### For the Job Execution Step Breakdown 
 
 
 <img width="940" height="417" alt="image" src="https://github.com/user-attachments/assets/af47aec1-dda6-4489-a953-ed832411e9ed" />
 
 
-
+The detailed log above breaks down the individual stages of the build-and-test job. It verifies that the environment setup, unit testing, code linting and Docker image compilation steps all completed successfully in sequence. 
 
 
 
