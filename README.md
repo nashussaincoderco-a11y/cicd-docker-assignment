@@ -4,8 +4,8 @@
 
 
 ## What This Project Does: 
-Whenever code is pushed top the main branch, automated workflows run to:
-1. **Tests the code**: Runs automatic unit tests to make sure everything works.
+This project consists of 2 tasks and here is what happens, whenever code is pushed top the main branch, automated workflows run to:
+1. **Test the code**: Runs automatic unit tests to make sure everything works.
 2. **Build & Deploy**: Packages the Python application into a Docker Container and uploads it directly to Docker Hub.
 
 
@@ -95,6 +95,26 @@ As you can see on the screenshot above, it displays the successful execution of 
 
 
 The detailed log above breaks down the individual stages of the build-and-test job. It verifies that the environment setup, unit testing, code linting and Docker image compilation steps all completed successfully in sequence. 
+
+
+### Screenshots of Pipeline passing for Task 2: 
+
+
+
+<img width="940" height="369" alt="image" src="https://github.com/user-attachments/assets/e8fa0c40-ab1c-4c11-8419-bb29e95baf26" />
+
+
+
+
+<img width="940" height="168" alt="image" src="https://github.com/user-attachments/assets/6571a989-683a-44e7-869e-d7e34174f877" />
+
+
+
+
+
+
+
+
 
 
 
