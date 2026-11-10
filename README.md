@@ -104,9 +104,21 @@ The detailed log above breaks down the individual stages of the build-and-test j
 <img width="940" height="369" alt="image" src="https://github.com/user-attachments/assets/e8fa0c40-ab1c-4c11-8419-bb29e95baf26" />
 
 
+As you can see on the Dashboard view, it shows the successful execution of the automated continuous deployment (CD Pipeline) workflows on GitHub actions which confirms that the code pushes to the main branch triggered the deployment process properly with passing green indicators. 
+
+
+
+<img width="1852" height="768" alt="image" src="https://github.com/user-attachments/assets/ed6f73a2-695d-4248-bafc-c49ddbe05bb4" />
+
+
+This detailed log highlights the execution steps of the build-and-deploy job illustrating how the pipeline securely authenticates with Docker Hub. It compiles and pushes the container image and completes the deployment sequence successfully. 
 
 
 <img width="940" height="168" alt="image" src="https://github.com/user-attachments/assets/6571a989-683a-44e7-869e-d7e34174f877" />
+
+
+As you can now see on Docker Hub registry that it showcases the live availability of the published container under the nashussaincoderco/python-app namespace which confirms that the automated deployment successfully the latest image. 
+
 
 
 
