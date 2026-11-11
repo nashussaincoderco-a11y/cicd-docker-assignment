@@ -120,6 +120,31 @@ This detailed log highlights the execution steps of the build-and-deploy job ill
 As you can now see on Docker Hub registry that it showcases the live availability of the published container under the nashussaincoderco/python-app namespace which confirms that the automated deployment successfully the latest image. 
 
 
+## CI Optimization: Code Linting Order
+
+You might have noticed earlier for my CI pipeline, I had set the workflow to build the docker image before initiating linting. I had noticed that if I let it stayed set to this, it will waste resources and time building containers if the pipeline was to fail. It can also lead to many other issues such as producing broken image builds, overloading my DockerHub repository with non-functional images and accidentally produce broken image builds. 
+
+
+
+By having linting put in place before building docker images, it will check for quality and syntax issues before spending the compute time packaging the resources for the application into an image. So if the code linting was to fail, the pipeline stops immediately instead of building a broken container. 
+
+
+<img width="940" height="824" alt="image" src="https://github.com/user-attachments/assets/e48c3c08-e915-4574-a9b1-705f319afddf" />
+
+As you can see on the screenshot above, I have set the linting step before the docker image build. Once I made that change, I ran a git commit and push to upload the changes to my GitHub. 
+
+
+<img width="940" height="302" alt="image" src="https://github.com/user-attachments/assets/a23907a7-41bb-4d96-a9fa-e7afd6cf4949" />
+
+
+You can see that it displays a successful execution of the CI pipeline ```(ci.yml)``` triggered by a commit on the main branch which confirms the build-and-test job passed successfully indicated by the green tick. 
+
+
+
+
+
+
+
 
 
 
