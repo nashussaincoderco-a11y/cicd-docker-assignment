@@ -140,6 +140,14 @@ As you can see on the screenshot above, I have set the linting step before the d
 You can see that it displays a successful execution of the CI pipeline ```(ci.yml)``` triggered by a commit on the main branch which confirms the build-and-test job passed successfully indicated by the green tick. 
 
 
+<img width="940" height="367" alt="image" src="https://github.com/user-attachments/assets/f7366d1a-8cfd-4c9d-b0fe-f794c1debf25" />
+
+
+You can now see that when I click to view the logs, it confirms the CI execution order demonstrating that the code Linting stage runs before the docker image build. This enforces the fail-fast approach because it validates code formatting before initiating the container compilation step. 
+
+
+
+
 
 
 
