@@ -57,7 +57,27 @@
 * -s tests : -s stands for start directory. It tells python to scan straight for the folder named test and look there rather than spending time scanning node modules, virtual environments or documentation folders. 
 
 
+<img width="513" height="175" alt="image" src="https://github.com/user-attachments/assets/bfb94443-ce13-4aa7-a2e0-95ca8f801d70" />
 
 
+* **`name:` name of the item**
+* **`run |` telling github to run the terminal commands one after another**
+* **`cd task-1` - walks into task 1 folder as this is where all our code and files live like an office room. GitHub actions drops you off at the front door lobby. If we don’t run this command, commands like flake8 will not know where to find the files and crash.** 
+* **`flake` - popular command line tool used to check the style and quality of my python code. It is a linter which scans my source code without running it to look for programmatic errors, bad practices, stylistic issues or syntax mistakes. It is an automated code reviewer that prevents bad or unreadable code from reaching production. Flake8 will fail the pipeline step if someone was to write messy code before it merges.** 
+* **`pip install flake8:` downloads the linting tool onto the github runner.** 
+* **`flake app/` - scans the app/ folder for any style or syntax mistakes.**
+
+
+
+<img width="556" height="145" alt="image" src="https://github.com/user-attachments/assets/5c586637-cf5d-4022-aa5b-b8582f8aa197" />
+
+
+* **`run:` tells GitHub to run the following terminal commands one after the other. 
+* **`cd task-1` - walks into the task 1 folder so it can find the Dockerfile 
+* **`docker build` - main command that wakes up docker and tells it to look for a dockerfile and start putting a container image together. 
+* **`-t` - The tag flag which simply puts a name the container. Do not have to put this but it better to add it for reference and easier to remember the container ID rather than a string of random letters and numbers. 
+* **`python-app` - giving it a human friendly name. 
+* **`latest` - tells anyone looking at it that it is the most current up to date version of this app. 
+* **`.` - tells docker where to look to find the docker file and project file. It means this current folder right here. 
   
 
