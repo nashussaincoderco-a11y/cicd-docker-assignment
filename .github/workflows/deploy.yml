@@ -22,3 +22,4 @@ jobs:
           cd task-1
           docker build -t nashussaincoderco/python-app:latest . 
           docker push nashussaincoderco/python-app:latest
+          
