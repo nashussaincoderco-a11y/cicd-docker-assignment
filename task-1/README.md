@@ -79,6 +79,39 @@
 * **`-t` - The tag flag which simply puts a name the container. Do not have to put this but it better to add it for reference and easier to remember the container ID rather than a string of random letters and numbers.** 
 * **`python-app` - giving it a human friendly name.** 
 * **`latest` - tells anyone looking at it that it is the most current up to date version of this app.** 
-* **`.` - tells docker where to look to find the docker file and project file. It means this current folder right here.** 
+* **`.` - tells docker where to look to find the docker file and project file. It means this current folder right here.**
+
+
+## Application code (app/main.py & tests/test_main.py)
+* app/main.py - Sets up the app, configures its routes, and acts as the main starting point that runs the application inside the Docker container.
+* tests/tests_main.py - Contains the automated unit tests that check if the app works properly without actually starting a live server.
+* I have kept them in two separate folders as it is able to test check the app safely without accidentally starting a live server.
+
+
+<img width="626" height="179" alt="image" src="https://github.com/user-attachments/assets/048a93a3-098f-4abb-8b43-f296c3ed15af" />
+
+
+In the main.py file, I have defined a function named add which takes inputs a and b. Line 2 adds the inputs together and then outputs the final result. 
+
+
+
+<img width="940" height="324" alt="image" src="https://github.com/user-attachments/assets/e99385ef-c956-471f-a8b1-5b3bf2e30836" />
+
+
+* **`Line 1` – Python has a built in set of tools just for testing code. It is called unnittest. By writing import unittest, it is telling python to get the set of tools to use its rules and tools to check work automatically.**
+* **`Line 2` – imports the add function that was created in test file for checks.** 
+* **`Line 4` – class allows us to group related things together. Creates a test case class to hold individual tests for this module. Creates the container called, TestMain and links it back to my testing toolbox (unittest.TestCase) so everything inside it is treated as an official test.** 
+* **`Line 5` – creating a specific test action inside the container. “Def” tells Python to define a new task and test_add is just the name I gave to the specific task.** 
+* **`Line 6` – self refers to this specific copy like the word “my”. Its like a way for the code to say, “Use my tools to check my work”. assertEqual is a function from Python’s unittest library used for unit testing which checks whether 2 values are equal or returns a Boolean. The function of line 6 is that it runs the equation with 2 and 3 and then checks if the answer equals to 5. If it does, the test passes.** 
+* **`Line 8-9` – If the test is successful, “if” acts as the gatekeep to proceed over to the next step once the condition has been met. “__name__” is the files internal name string and “== ‘__main__’: checks if the badge say ‘__main__’ which python automatically gives to the exact file you run directly.** 
+
+
+
+
+
+
+
+
+
   
 
