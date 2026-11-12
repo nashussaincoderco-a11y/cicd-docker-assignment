@@ -3,7 +3,8 @@
 
 ## CI Workflow Line-by-Line Breakdown (`.github/workflows/ci.yml`)
 
-<img width="706" height="333" alt="image" src="https://github.com/user-attachments/assets/f019a52a-4c9a-4b85-88c4-ce888f965f36" />
+<img width="577" height="760" alt="image" src="https://github.com/user-attachments/assets/04a906f7-6a55-457e-a16f-037c567884a1" />
+
 
 
 ### Workflow Setup & Triggers (ci.yml)
