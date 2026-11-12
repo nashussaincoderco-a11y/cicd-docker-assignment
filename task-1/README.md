@@ -103,7 +103,18 @@ In the main.py file, I have defined a function named add which takes inputs a an
 * **`Line 4` – class allows us to group related things together. Creates a test case class to hold individual tests for this module. Creates the container called, TestMain and links it back to my testing toolbox (unittest.TestCase) so everything inside it is treated as an official test.** 
 * **`Line 5` – creating a specific test action inside the container. “Def” tells Python to define a new task and test_add is just the name I gave to the specific task.** 
 * **`Line 6` – self refers to this specific copy like the word “my”. Its like a way for the code to say, “Use my tools to check my work”. assertEqual is a function from Python’s unittest library used for unit testing which checks whether 2 values are equal or returns a Boolean. The function of line 6 is that it runs the equation with 2 and 3 and then checks if the answer equals to 5. If it does, the test passes.** 
-* **`Line 8-9` – If the test is successful, “if” acts as the gatekeep to proceed over to the next step once the condition has been met. “__name__” is the files internal name string and “== ‘__main__’: checks if the badge say ‘__main__’ which python automatically gives to the exact file you run directly.** 
+* **`Line 8-9` – If the test is successful, “if” acts as the gatekeep to proceed over to the next step once the condition has been met. “__name__” is the files internal name string and “== ‘__main__’: checks if the badge say ‘__main__’ which python automatically gives to the exact file you run directly.**
+
+
+## Container Configuration (Dockerfile)
+
+<img width="653" height="272" alt="image" src="https://github.com/user-attachments/assets/f660da9c-c7aa-4836-bc23-49ea74ecbb62" />
+
+
+Dockerfile will package my application and all the stuff it needs such as Python and its dependencies into a single, portable container image. It acts as the blueprint to run my application the same way it would run on my local computer, in the GitHub actions CI pipeline and on any cloud server without having to manually install things each time. 
+
+
+
 
 
 
