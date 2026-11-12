@@ -73,12 +73,12 @@
 <img width="556" height="145" alt="image" src="https://github.com/user-attachments/assets/5c586637-cf5d-4022-aa5b-b8582f8aa197" />
 
 
-* **`run:` tells GitHub to run the following terminal commands one after the other. 
-* **`cd task-1` - walks into the task 1 folder so it can find the Dockerfile 
-* **`docker build` - main command that wakes up docker and tells it to look for a dockerfile and start putting a container image together. 
-* **`-t` - The tag flag which simply puts a name the container. Do not have to put this but it better to add it for reference and easier to remember the container ID rather than a string of random letters and numbers. 
-* **`python-app` - giving it a human friendly name. 
-* **`latest` - tells anyone looking at it that it is the most current up to date version of this app. 
-* **`.` - tells docker where to look to find the docker file and project file. It means this current folder right here. 
+* **`run:` tells GitHub to run the following terminal commands one after the other.** 
+* **`cd task-1` - walks into the task 1 folder so it can find the Dockerfile.** 
+* **`docker build` - main command that wakes up docker and tells it to look for a dockerfile and start putting a container image together.**
+* **`-t` - The tag flag which simply puts a name the container. Do not have to put this but it better to add it for reference and easier to remember the container ID rather than a string of random letters and numbers.** 
+* **`python-app` - giving it a human friendly name.** 
+* **`latest` - tells anyone looking at it that it is the most current up to date version of this app.** 
+* **`.` - tells docker where to look to find the docker file and project file. It means this current folder right here.** 
   
 
