@@ -65,8 +65,7 @@ All GitHub Actions workflows live in ```.github/workflows``` as this is the repo
 
 * File location: ```.github/workflows/ci.yml```
 * What it does: Whenever code changes are pushed, GitHub sets up Python, installs dependencies and runs unit tests using ```pytest``` to catch bugs early.
-* [Click here to view my step by step implementaion](https://github.com/nashussaincoderco-a11y/cicd-docker-assignment/tree/main/task-1)
-
+* * <a href="[https://github.com/nashussaincoderco-a11y/cicd-docker-assignment/tree/main/task-1](https://github.com/nashussaincoderco-a11y/cicd-docker-assignment/tree/main/task-1)" target="_blank">Click here to view my step-by-step implementation</a>
 
 
 
