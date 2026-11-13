@@ -147,6 +147,21 @@ You can see that it displays a successful execution of the CI pipeline ```(ci.ym
 You can now see that when I click to view the logs, it confirms the CI execution order demonstrating that the code Linting stage runs before the docker image build. This enforces the fail-fast approach because it validates code formatting before initiating the container compilation step. 
 
 
+## Infrastructure impact:
+
+* `Cloud-native automation`: It reduces the workload of having to manually update everything on my local computer to GitHub's cloud runners because it automatically updates the environment every time the code is updated.
+* `Registry Centralization`: It also automatically saves my containerised app on DockerHub making the app reliable as it pulls the latest version of the app from there. It keeps the latest image of the app on there.
+* `On-demand scalability`: It uses cloud resources only while building and pushing my code meaning zero wasted server overhead.
+
+
+## Benefits of CI/CD automation with Docker in a production environment for developers:
+
+* `Consistency`: It packages the the application and dependencies into an identical Docker container image across development, testing and production removing the "it only works on my machine problem"
+* `Speed & Delivery efficiency`: Automates the manual steps of compiling, packaging and pushing updates allowing developers to focus purely writing code as the pipeline already handles the delivery of the application instantly.
+* `Security & Control`: Protects sensitive login credentials using encrypted repository secrets and enforces the principle of least privilege through Personal Access Tokens. 
+
+
+
 
 
 
