@@ -73,7 +73,8 @@ All GitHub Actions workflows live in ```.github/workflows``` as this is the repo
 ### Task 2: Continuous Development(CD) 
 * File location: ```.github/workflows/deploy.yml```
 * Docker Hub Registry: nashussaincoderco/python-app
-* What it does: Automatically logs into Docker Hub using secure secrets, builds the Docker image from your Docker file, and pushes the latest version live. 
+* What it does: Automatically logs into Docker Hub using secure secrets, builds the Docker image from your Docker file, and pushes the latest version live.
+* [Click here to view my step by step implementaion](https://github.com/nashussaincoderco-a11y/cicd-docker-assignment/tree/main/task-2). 
 
 
 
